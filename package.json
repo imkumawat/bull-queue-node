@@ -1,0 +1,28 @@
+{
+  "name": "bull-queue",
+  "version": "1.0.0",
+  "description": "simple queue system to execute bulk tasks in background",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imkumawat/node-bull-queue.git"
+  },
+  "keywords": [
+    "bull",
+    "queue",
+    "bullmq"
+  ],
+  "author": "Manoj Kumawat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imkumawat/node-bull-queue/issues"
+  },
+  "homepage": "https://github.com/imkumawat/node-bull-queue#readme",
+  "dependencies": {
+    "bull": "^4.10.2",
+    "express": "^4.18.2"
+  }
+}
