@@ -14,9 +14,11 @@ route.post("/add-job", async (req, res) => {
     // will console the name
     const data = req.body;
 
-    pushIntoEmailQueue(data);
+    pushIntoEmailQueue(data).then((jobInfo) => {
+      return res.status(200).json({ result: `okay, job id: ${jobInfo.id}` });
+    });
 
-    return res.status(200).send("okay");
+    //return res.status(200).send("okay");
   } catch (err) {
     return res.status(500).send(err);
   }

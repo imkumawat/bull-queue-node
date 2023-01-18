@@ -2,8 +2,9 @@ const express = require("express");
 const app = express();
 app.use(express.json());
 
-// Adding consumers into process
-require("./services/consumer-service");
+// Adding queue-event-listner-service into process
+
+require("./services/queue-event-listner-service");
 
 const jobRoute = require("./routes/job-route");
 
